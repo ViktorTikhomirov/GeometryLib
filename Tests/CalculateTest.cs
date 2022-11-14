@@ -5,7 +5,7 @@ namespace Tests
     [TestClass]
     public class CalculateTest
     {
-        [TestMethod] //Тест расчёта площади круга при радиусе 45. Ожидаемый результат - 6361.7
+        [TestMethod] //РўРµСЃС‚ СЂР°СЃС‡С‘С‚Р° РїР»РѕС‰Р°РґРё РєСЂСѓРіР° РїСЂРё СЂР°РґРёСѓСЃРµ 45. РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ - 6361.7
         public void CalculateCircleAreaTest()
         {
             Circle circle = new Circle(45);
@@ -13,7 +13,7 @@ namespace Tests
             double actual = circle.CalculateArea();
             Assert.AreEqual(expected, actual);
         }
-        [TestMethod]//Тест расчёта площади треугольника при сторонах 12, 15, 20. Ожидаемый результат - 89.6
+        [TestMethod]//РўРµСЃС‚ СЂР°СЃС‡С‘С‚Р° РїР»РѕС‰Р°РґРё С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° РїСЂРё СЃС‚РѕСЂРѕРЅР°С… 12, 15, 20. РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ - 89.6
         public void CalculateTriangleAreaTest()
         {
             Triangle triangle = new Triangle(12, 15, 20);
@@ -21,7 +21,7 @@ namespace Tests
             double actual = triangle.CalculateArea();
             Assert.AreEqual(expected, actual);
         }
-        //Тесты проверки на то, является ли треугольник прямоугольным
+        //РўРµСЃС‚С‹ РїСЂРѕРІРµСЂРєРё РЅР° С‚Рѕ, СЏРІР»СЏРµС‚СЃСЏ Р»Рё С‚СЂРµСѓРіРѕР»СЊРЅРёРє РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Рј
         [TestMethod]
         public void IsRectangularTest()
         {
